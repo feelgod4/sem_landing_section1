@@ -1,64 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 body{
+
     font-family: Alata;
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
     line-height: 23px;
-    margin-left: 100px;
-    margin-right: 100px;
-
+    margin: 0;
     color: #373737;
 }
+button{
+    border: none; outline: none; 
+}
+
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 100px 0px 100px;
 }
 .nav__button:last-child{
     border: 2px solid #717CFF;
     border-radius: 11px;
-    padding: 10px;
+    padding: 10px 25px 10px 25px;
 }
 .nav__button:nth-child(2){
-    margin-left: 25%;
-    text-decoration: underline;
-    text-decoration-color: #717CFF;
-}
-.description{
 
+    border-bottom: 2px solid #717CFF;
+}
+
+.description{
     display: flex;
     flex-direction: column;
-    
     width: 50%;
 }
 .description__header{
-    font-family: Alata;
-    font-style: normal;
-    font-weight: normal;
     font-size: 56px;
     line-height: 77px;
 }
 .description__text{
-    font-family: Alata;
-font-style: normal;
-font-weight: normal;
-font-size: 22px;
-line-height: 38px;
-/* or 173% */
-color: #7D7D7D;
+    font-size: 22px;
+    line-height: 38px;
+    color: #7D7D7D;
 }
 .description__button{
     margin-top: 20px;
     background: #717CFF;
-    width: 150px;
+    width: 200px;
     text-align: center;
     vertical-align:middle;
     padding: 15px;
     border-radius: 11px;
     color: white;
+    font-size: 22px;
+    line-height: 40px;
 }
 
 .description__contacts{
@@ -66,12 +62,10 @@ color: #7D7D7D;
     flex-direction: row;
 }
 .content{
-    margin: 20px;
-    margin-top: 100px;
+    margin: 100px 0px 0px 100px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-
 }
 
 .description__contacts > img {
@@ -81,25 +75,19 @@ color: #7D7D7D;
     width: 25px;
 }
 
-.images {
-    position: absolute;
-
-    bottom: 0;
-    right: 0;
-}
-
 .woman {
-    height: 80vh;
-  
-    position: absolute;
-    right: 5vw;
-    bottom: 0;
+    background-image: url(assets/oval.svg);
+    background-repeat: no-repeat;
 }
-  
-.oval {
-    height: 70vh;
-    position: absolute;
-    z-index: -1;
-    right: 0vh;
-    bottom: 0vh;
+@media screen and (min-width: 1300px){
+    .nav__button:nth-child(2){
+        margin-left: 30%;
+        border-bottom: 2px solid #717CFF;
+    }
+}
+@media screen and (max-width: 1300px){
+    .nav__button:nth-child(2){
+        margin-left: 50px;
+        border-bottom: 2px solid #717CFF;
+    }
 }
