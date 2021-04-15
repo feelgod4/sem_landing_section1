@@ -33,7 +33,7 @@ nav{
 .description{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
 }
 .description__header{
     font-size: 56px;
